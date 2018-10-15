@@ -425,11 +425,12 @@ Quick
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">捐赠</h3>
+        <h3 class="widget-title">打赏一哈</h3>
         <div class="widget">
             <!--这里添加你要写的内容-->
-            <img src="/images/zfb.jpg">
-            <img src="/images/wxzf.jpg">
+            <br/>
+            <img src="/images/zfbsmall.png">
+            <img src="/images/wxzfsmall.png">
         </div>
     </div>
 
@@ -442,6 +443,10 @@ Quick
                 
                     <li>
                         <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://dysonnnn.github.io">Dysonnnn</a>
                     </li>
                 
             </ul>
@@ -465,17 +470,37 @@ Quick
                 <h1 class="logo-wrap">
                     <a href="index.html" class="logo"></a>
                 </h1>
+                <div id="show">时间初始化</div>
                 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
                 </script>
-                <div id="busuanzi_container_site_uv" style='display:none'>
+                <script>
+                window.onload = function () {
+                        var show = document.getElementById("show");
+                        setInterval(function () {
+                            var time = new Date();
+                            // 程序计时的月从0开始取值后+1 
+                            var m = time.getMonth() + 1;
+                            //根据自己博客的创建时间更改数值 
+                            var t = "此博客已存活" + (time.getFullYear() - 2018) + "年" 
+                                + (m - 10) + "月"
+                                + (time.getDate()-13) + "天" + time.getHours() + "时"
+                                + time.getMinutes() + "分" 
+                                + time.getSeconds() + "秒";
+                            show.innerHTML = t;
+                        }, 1000);
+                    }; 
+                </script>
+                <span id="busuanzi_container_site_uv" style='display:none'>
                     您是第 <span id="busuanzi_value_site_uv"></span> 个小伙伴来到这里
-                </div>
+                </span>
                 <br>
-                <div id="busuanzi_container_site_pv" style='display:none'>
+                <span id="busuanzi_container_site_pv" style='display:none'>
                     本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
-                </div>
+                </span>
                 <p>&copy; 2018 blackLYH</p>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Modify by <a href="//github.com/blackLYH" target="_blank">blackLYH</a></p>
+                
+                
             </div>
             <div class="footer-plugins">
               
@@ -499,7 +524,7 @@ Quick
             verify:false,
             app_id: 'BuyGaOIzKIIGpnQj7VWO3p1D-gzGzoHsz',
             app_key: '57fprFOPRL8u5kfb2SAwOIKt',
-            placeholder: '在此写入消息',
+            placeholder: '请在此写入消息',
             pageSize: '10',
             avatar: 'identicon',
             avatar_cdn:  'https://gravatar.loli.net/avatar/'
