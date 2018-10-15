@@ -24,6 +24,8 @@
     
 
     
+        <link rel="icon" href="../../css/images/icon.png" />
+    
 
     <link rel="stylesheet" href="../../libs/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../libs/titillium-web/styles.css">
@@ -40,6 +42,17 @@
         <link rel="stylesheet" href="../../libs/justified-gallery/justifiedGallery.min.css">
     
     
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?582710d21f35a5a3b70e7c592a1ffc68";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
     
 
 
@@ -159,7 +172,7 @@
 <span class="comment-counter">
     <i class="fa fa-comments-o"></i>
     
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2018/10/14/My-first-blog/">0</span>
+        <span><a href="http://yoursite.com/2018/10/14/My-first-blog/#isso-thread"></a></span>
     
 </span>
 
@@ -359,7 +372,7 @@
         <h3 class="widget-title">联系我</h3>
         <div class="widget">
             <!--这里添加你要写的内容-->
-            Please write the email to blackLYH@outlook.com
+            Please send the email to blackLYH@outlook.com
         </div>
     </div>
 
@@ -421,18 +434,22 @@
 
         
     
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
     <script>
-    var disqus_shortname = 'LYH';
-    
-    
-    (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+        new Valine({
+            el: '#valine-thread' ,
+            notify:false,
+            verify:false,
+            app_id: 'BuyGaOIzKIIGpnQj7VWO3p1D-gzGzoHsz',
+            app_key: '57fprFOPRL8u5kfb2SAwOIKt',
+            placeholder: '在此写入消息',
+            pageSize: '10',
+            avatar: 'identicon',
+            avatar_cdn:  'https://gravatar.loli.net/avatar/'
+        });
     </script>
+
 
 
 
