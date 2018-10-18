@@ -12,17 +12,17 @@
     
         <meta name="keywords" content="" />
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="Welcome to my blog, enter password to read.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/10/13/hello-world/index.html">
+<meta property="og:url" content="/2018/10/13/hello-world/index.html">
 <meta property="og:site_name" content="blackLYH_blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Welcome to my blog, enter password to read.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-10-14T11:55:13.090Z">
+<meta property="og:updated_time" content="2018-10-18T05:02:28.868Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:description" content="Welcome to my blog, enter password to read.">
     
 
     
@@ -30,7 +30,7 @@
     
 
     
-        <link rel="icon" href="../../../../css/images/icon.png" />
+        <link rel="icon" href="../../../../css/images/icon2.png" />
     
 
     <link rel="stylesheet" href="../../../../libs/font-awesome/css/font-awesome.min.css">
@@ -178,81 +178,61 @@ var _hmt = _hmt || [];
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+            <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="Welcome to my blog, enter password to read." />
+    <label for="pass">Welcome to my blog, enter password to read.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
         </div>
         <footer class="article-footer">
             
 
-
-
-    <a data-url="http://yoursite.com/2018/10/13/hello-world/" data-id="cjnb6zrzn0001cwvvcmsdcebo" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ">QQ</a>
+    <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记">有道云笔记</a>
+    <a href="#" class="bds_copy" data-cmd="copy" title="复制链接">复制链接</a>
+</div>
 <script>
-    (function ($) {
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
 </script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
+
 
         </footer>
     </div>
@@ -349,6 +329,15 @@ var _hmt = _hmt || [];
         
             
                 
+<div class="widget-wrap widget-list">
+    <h3 class="widget-title">目录</h3>
+    <div class="widget">
+        <div id="toc" class="toc-article">
+            
+        </div>
+    </div>
+</div>
+
 
             
                 
@@ -495,7 +484,7 @@ var _hmt = _hmt || [];
                     </li>
                 
                     <li>
-                        <a href="http://dysonnnn.github.io"  target="_blank">Dysonnnn</a>
+                        <a href="https://dysonnnn.github.io"  target="_blank">Dysonnnn</a>
                     </li>
                 
             </ul>
@@ -570,7 +559,7 @@ var _hmt = _hmt || [];
         new Valine({
             el: '#valine-thread' ,
             notify:false,
-            verify:false,
+            verify:true,
             app_id: 'BuyGaOIzKIIGpnQj7VWO3p1D-gzGzoHsz',
             app_key: '57fprFOPRL8u5kfb2SAwOIKt',
             placeholder: '请在此写入消息',
@@ -608,3 +597,4 @@ var _hmt = _hmt || [];
     </div>
 </body>
 </html>
+<script async src="/js/point.js"></script>
