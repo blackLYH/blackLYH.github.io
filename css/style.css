@@ -923,11 +923,64 @@ code {
 .toc-article .toc .toc-item {
   list-style: none;
 }
+#needsharebutton-postbottom {
+  position: relative;
+  cursor: pointer;
+  height: wrap;
+}
+#needsharebutton-postbottom .btn {
+  display: inline;
+  padding: 1px 4px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+#needsharebutton-float {
+  position: fixed;
+  bottom: 38px;
+  left: -8px;
+  z-index: 9999;
+  cursor: pointer;
+}
+#needsharebutton-float .btn {
+  padding: 0 10px 0 14px;
+  border: 1px solid $btn-default-border-color;
+  border-radius: 4px;
+}
 .article-single {
   padding: 30px 30px 20px;
 }
 .article-inner {
   overflow: hidden;
+}
+.post-widgets {
+  padding-top: 9px;
+  height: 60px;
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: left;
+  -moz-box-pack: left;
+  -ms-flex-pack: left;
+  -webkit-justify-content: left;
+  justify-content: left;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: left;
+  -moz-box-align: left;
+  -ms-flex-align: left;
+  -webkit-align-items: left;
+  align-items: left;
+}
+.post-widgets .post-meta-divider {
+  height: 60px;
+  color: $grey-dark;
 }
 .article-row {
   width: 100%;
