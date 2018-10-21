@@ -126,7 +126,7 @@
         var myoptions = getOptions(el);
         var url = "https://www.douban.com/share/service?name=" +
           encodeURIComponent(myoptions.title) +
-          "&href=" + encodeURIComponent(myoptions.url) +
+          "&href=" + encodeURIComponent(myoptions.url) ++
           "&image=" + encodeURIComponent(myoptions.image);
         root.popup(url);
       },

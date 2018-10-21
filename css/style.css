@@ -701,8 +701,21 @@ code {
 .widget-wrap {
   padding: 30px 30px 20px;
 }
+.widget-toc {
+  opacity: 0.9;
+  float: right;
+  right: 4px;
+  top: 130px;
+  position: fixed;
+  z-index: 999;
+  padding: 0px 0px 0px 10px;
+  background: #fefefe;
+  color: $grey-dark;
+  text-align: left;
+  font-size: 20px;
+}
 .widget-title {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 6px;
@@ -913,15 +926,26 @@ code {
   margin-right: 5px;
 }
 .toc-article {
-  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
   padding: 0;
+  color: #000;
 }
 .toc-article .toc {
   padding: 0;
-  margin: 10px 0 0;
+  margin: 0px 15px;
 }
 .toc-article .toc .toc-item {
-  list-style: none;
+  border: none;
+  padding-bottom: 5px;
+  margin: 0px 2px;
+  text-align: left;
+  font-size: 15px;
+  -webkit-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  -ms-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 #needsharebutton-postbottom {
   position: relative;
@@ -1672,7 +1696,7 @@ a.article-title:hover {
   color: #ddd;
 }
 #footer {
-  background: #33363b;
+  background: color-footer-background;
   margin-top: 60px;
   color: #aaa;
   line-height: 1.6em;
